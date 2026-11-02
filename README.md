@@ -126,8 +126,5 @@ Press **Q** to close the application.
 
 GitHub: [@kritikaaa2020-lang](https://github.com/kritikaaa2020-lang)
 
----
 
-*An exploration of artificial intelligence, computer vision, and creative image processing.*
 
-*Original project inspiration: Alvin Wan's 2017 emotion-based dog filter tutorial. This repository contains a modified project setup and performance improvements.*
