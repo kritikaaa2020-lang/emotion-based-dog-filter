@@ -1,51 +1,134 @@
-# [How To Apply Computer Vision to Build an Emotion-Based Dog Filter in Python 3](https://www.digitalocean.com/community/tutorials/how-to-apply-computer-vision-to-build-an-emotion-based-dog-filter-in-python-3)
+# 🐶 Emotion-Based Dog Filter
 
-**Want an in-person tutorial with step-by-step walkthroughs and explanations? See the corresponding AirBnb experience for both beginner and experienced coders alike, at ["Build a Dog Filter with Computer Vision"](http://abnb.me/GFEpWpfUlO)**
+An interactive AI-powered computer vision project that detects human facial expressions and transforms them into fun animal filters in real time.
 
-This repository includes all source code for the [tutorial on DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-apply-computer-vision-to-build-an-emotion-based-dog-filter-in-python-3) with the same title, including:
-- A real-time filter that adds dog masks to faces on a live feed.
-- A dog filter that responds to your emotions. (Couldn't find a pug mask, so I used a cat.) A generic dog for smiling "happy", a dalmation for frowning "sad", and a cat for dropped jaws "surprise".
-- Utilities used for portions of the tutorial, such as plotting and advesarial example generation.
-- Simple convolutional neural network written in [PyTorch](http://pytorch.org), with pretrained model.
-- Ordinary least squares and ridge regression models using randomized features.
+## ✨ About the Project
 
-created by [Alvin Wan](http://alvinwan.com), December 2017
+The Emotion-Based Dog Filter combines facial detection, emotion recognition, and image processing to create an interactive webcam experience.
 
-![step_8_emotion_dog_mask](https://user-images.githubusercontent.com/2068077/34196964-36383d58-e519-11e7-92dc-2d7c33ab29bd.gif)
+Using a webcam, the application detects a person's face, analyses their facial expression, and applies an animal mask corresponding to the detected emotion.
 
-# Getting Started
+### 🎭 Emotion-Based Filters
 
-> You can setup the repository using Python or view the web demo at [dogfilter.alvinwan.com](https://dogfilter.alvinwan.com)
+| Detected Emotion | Applied Filter |
+|---|---|
+| Happy 😊 | Dog 🐶 |
+| Sad 😢 | Dalmatian 🐾 |
+| Surprised 😮 | Cat 🐱 |
 
-For complete step-by-step instructions, see the [tutorial on DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-apply-computer-vision-to-build-an-emotion-based-dog-filter-in-python-3). This codebase was developed and tested using `Python 3.6`. If you're familiar with Python, then see the below to skip the tutorial and get started quickly:
+## 🚀 Features
 
-> (Optional) [Setup a Python virtual environment](https://www.digitalocean.com/community/tutorials/common-python-tools-using-virtualenv-installing-with-pip-and-managing-packages#a-thorough-virtualenv-how-to) with Python 3.6.
+- Real-time face detection using OpenCV.
+- Facial emotion recognition using a pretrained PyTorch model.
+- Automatic animal filter selection based on detected emotions.
+- Live webcam integration.
+- Multiple animal masks.
+- Image processing and facial landmark-related utilities.
 
-1. Install all Python dependencies.
+## 🛠️ Technologies Used
 
+- Python
+- OpenCV
+- PyTorch
+- NumPy
+- Computer Vision
+- Convolutional Neural Networks (CNN)
+
+## 📁 Project Structure
+
+```text
+emotion-based-dog-filter/
+│
+├── src/
+│   ├── assets/
+│   ├── data/
+│   ├── outputs/
+│   ├── step_2_face_detect.py
+│   ├── step_3_camera_test.py
+│   ├── step_7_fer.py
+│   └── step_8_dog_emotion_mask.py
+│
+├── requirements.txt
+├── setup_windows.bat
+├── run_filter.bat
+├── test_webcam.bat
+├── README.md
+└── LICENSE
 ```
-pip install -r requirements.txt
+
+## ⚙️ Installation and Setup
+
+### Prerequisites
+
+- Python 3.12 (64-bit)
+- VS Code
+- A working webcam
+- Windows operating system
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kritikaaa2020-lang/emotion-based-dog-filter.git
 ```
 
-2. Navigate into `src`.
+### 2. Navigate to the Project
 
-```
-cd src
-```
-
-3. Launch the script for an emotion-based dog filter:
-
-```
-python step_8_dog_emotion_mask.py
+```bash
+cd emotion-based-dog-filter
 ```
 
-# How it Works
+### 3. Set Up the Environment
 
-See the below resources for explanations of related concepts:
+Run the Windows setup script:
 
-- ["Understanding Least Squares"](http://alvinwan.com/understanding-least-squares/)
-- ["Understanding Neural Networks"](http://alvinwan.com/understanding-neural-networks/)
+```powershell
+.\setup_windows.bat
+```
 
-## Acknowledgements
+This creates a virtual environment and installs the required dependencies.
 
-These models are trained on a Face Emotion Recognition (FER) dataset curated by Pierre-Luc Carrier and Aaron Courville in 2013, as published on [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge).
+### 4. Launch the Application
+
+```powershell
+.\run_filter.bat
+```
+
+Allow webcam access if prompted.
+
+Press **Q** to close the application.
+
+## 🧠 How It Works
+
+1. **Face Detection:** OpenCV identifies faces in the webcam feed.
+2. **Emotion Recognition:** A pretrained PyTorch model analyses facial expressions.
+3. **Emotion Classification:** The application identifies the predicted emotion.
+4. **Filter Selection:** An animal mask is selected according to the detected emotion.
+5. **Real-Time Processing:** The mask is applied to the webcam feed.
+
+## 🎯 Project Objectives
+
+- Explore practical applications of artificial intelligence.
+- Understand facial expression recognition.
+- Implement real-time computer vision.
+- Combine deep learning with image processing.
+- Develop an interactive AI-based application.
+
+## 🔮 Future Improvements
+
+- Improve facial detection and mask alignment.
+- Add more emotions and animal filters.
+- Develop a browser-based version.
+- Improve real-time processing performance.
+- Create a more interactive user interface.
+
+## 👩‍💻 Author
+
+**Kritika**
+
+GitHub: [@kritikaaa2020-lang](https://github.com/kritikaaa2020-lang)
+
+---
+
+*An exploration of artificial intelligence, computer vision, and creative image processing.*
+
+*Original project inspiration: Alvin Wan's 2017 emotion-based dog filter tutorial. This repository contains a modified project setup and performance improvements.*
