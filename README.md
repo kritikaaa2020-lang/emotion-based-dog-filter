@@ -53,7 +53,6 @@ emotion-based-dog-filter/
 ├── run_filter.bat
 ├── test_webcam.bat
 ├── README.md
-└── LICENSE
 ```
 
 ## ⚙️ Installation and Setup
