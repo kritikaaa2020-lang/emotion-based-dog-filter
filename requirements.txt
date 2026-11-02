@@ -1,0 +1,4 @@
+# Tested setup target: Windows + Python 3.12
+numpy<2
+opencv-python==4.10.0.84
+torch>=2.2.0
