@@ -120,11 +120,7 @@ Press **Q** to close the application.
 - Improve real-time processing performance.
 - Create a more interactive user interface.
 
-## 👩‍💻 Author
 
-**Kritika**
-
-GitHub: [@kritikaaa2020-lang](https://github.com/kritikaaa2020-lang)
 
 
 
